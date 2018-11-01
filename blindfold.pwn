@@ -31,16 +31,16 @@ CMD:screen(playerid,params[])
 	}
 
 	switch(option)
-    {
+	{
 		case 0:
 		{
 			TextDrawHideForPlayer(playerid, Blind);
 			TextDrawHideForPlayer(playerid, Blind2);
 		}
-        case 1: TextDrawShowForPlayer(playerid, Blind);
-        case 2: TextDrawShowForPlayer(playerid, Blind2);
+		case 1: TextDrawShowForPlayer(playerid, Blind);
+		case 2: TextDrawShowForPlayer(playerid, Blind2);
 		default: SendClientMessage(playerid, 0xDE3838FF, "ERROR: {FFFFFF}Invalid option!");
-    }
+	}
 	return 1;
 }
 
